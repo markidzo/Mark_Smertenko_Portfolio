@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Smertenko | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav id="nav">
+        <a href="#" data-lang="nav_home"></a>
+        <a href="#about" data-lang="nav_about"></a>
+        <a href="#projects" data-lang="nav_projects"></a>
+        <a href="#contact" data-lang="nav_contact"></a>
+    </nav>
+
+    <div class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="lang-switch">
+        <button onclick="setLang('ua')">UA</button>
+        <button onclick="setLang('en')">EN</button>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="left">
+        <img src="img/photo1.jpg" alt="me">
+        <h1>Mark Smertenko</h1>
+        <p>marksmertenko@email.com</p>
+    </div>
+
+    <div class="right">
+        <h2 data-lang="hero_title"></h2>
+        <p data-lang="hero_sub"></p>
+        <button onclick="scrollToProjects()" data-lang="hero_btn">Мої проєкти</button>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="fade">
+    <h2 data-lang="about_title"></h2>
+    <p data-lang="about_text"></p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="fade">
+    <h2 data-lang="skills_title"></h2>
+
+    <div class="skills">
+        <div class="skill">Python development<div class="bar"><span style="width:45%"></span></div></div>
+        <div class="skill">ML-development<div class="bar"><span style="width:20%"></span></div></div>
+        <div class="skill">Web-development<div class="bar"><span style="width:70%"></span></div></div>
+        <div class="skill">Working with data<div class="bar"><span style="width:45%"></span></div></div>
+        <div class="skill">Project working<div class="bar"><span style="width:70%"></span></div></div>
+        <div class="skill">English B1<div class="bar"><span style="width:75%"></span></div></div>
+    </div>
+</section>
+
+<section class="education">
+    <h2 data-lang="educ_title"></h2>
+
+    <div class="educts">
+        <div class="educ">
+            <h3 data-lang="educ1"></h3>
+        </div>
+        <div class="educ">
+            <h3 data-lang="educ2"></h3>
+            <a href="sertificate/web.pdf" target="_blank" rel="noopener noreferrer" data-lang="web_sert"></a>
+        </div>
+        <div class="educ">
+            <h3 data-lang="educ3"></h3>
+        </div>
+        <div class="educ">
+            <h3 data-lang="educ4"></h3>
+            <a href="sertificate/arduino.pdf" target="_blank" rel="noopener noreferrer" data-lang="web_sert"></a>
+        </div>
+        <div class="educ">
+            <h3 data-lang="educ5"></h3>
+            <a href="sertificate/python.pdf" target="_blank" rel="noopener noreferrer" data-lang="web_sert"></a>
+        </div>
+    </div>
+</section>
+
+
+<!-- PROJECTS -->
+<section id="projects" class="fade">
+    <h2 data-lang="projects_title"></h2>
+
+    <div class="projects">
+        <a href="acoustic.html" target="_blank" rel="noopener noreferrer">
+            <div class="project">
+                <img class="photo_proj"  src="img/detect1.JPG" alt="">
+                <h3>AI-Based Acoustic Fault Detector</h3>
+                <p data-lang="proj1"></p>
+            </div>
+        </a>
+
+    </div>
+</section>
+
+
+<section class="achievments">
+    <h2 data-lang="achiev_title">ДОСЯГНЕННЯ</h2> 
+
+
+    <div class="achievs">
+        <div class="achiev">
+            <p data-lang="achiev1"></p>
+        </div>
+        <div class="achiev">
+            <p data-lang="achiev2"></p>
+        </div>
+        <div class="achiev">
+            <p data-lang="achiev3"></p>
+        </div>
+        <div class="achiev">
+            <p data-lang="achiev4"></p>
+        </div>
+        <div class="achiev">
+            <p data-lang="achiev5"></p>
+        </div>
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="fade">
+    <h2 data-lang="contact_title"></h2>
+    <p>Tel: +380(63)-831-17-50</p>
+    <p>Email: marksmertenko@email.com</p>
+    <p>GitHub: <a href="https://github.com/markidzo" target="_blank" rel="noopener noreferrer">https://github.com/markidzo</a></p>
+</section>
+
+<footer>
+    <p>© 2026 Mark Smertenko</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
